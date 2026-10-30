@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Great Honor Graduation — Cinta Ratu Bunga Permatahati | PPG × BSI × Maganghub Kemnaker</title>
+  <meta name="description"
+    content="Official Tribute & Great Honor Graduation Portal untuk Cinta Ratu Bunga Permatahati — Policy Procedure Group (PPG) Bank Syariah Indonesia • Maganghub Kemnaker RI • Jumat, 30 Oktober 2026." />
+  <meta name="theme-color" content="#041E20" />
+  <link rel="icon" type="image/svg+xml" href="./Assets/favicon.svg" />
+
+  <!-- Google Fonts: Plus Jakarta Sans, Space Grotesk, Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <!-- MANDATORY: Purely decorative visual scroll progress bars MUST set aria-hidden="true" -->
+  <div id="progress" aria-hidden="true"></div>
+
+  <!-- Interactive Futuristic Stardust & Geometric Canvas -->
+  <canvas id="cosmos-canvas" aria-hidden="true"></canvas>
+
+  <!-- Confetti Overlay Canvas -->
+  <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+
+  <!-- Ambient Aurora Spotlights -->
+  <div class="ambient-aurora" aria-hidden="true">
+    <div class="aurora-orb orb-teal"></div>
+    <div class="aurora-orb orb-gold"></div>
+    <div class="aurora-orb orb-rose"></div>
+    <div class="cyber-grid"></div>
+  </div>
+
+  <!-- Floating Navigation HUD -->
+  <header class="hud-header" id="top-nav">
+    <div class="hud-container">
+      <a href="#hero" class="hud-brand" aria-label="Beranda Great Honor Cinta Ratu Bunga Permatahati">
+        <span class="hud-star-icon" aria-hidden="true">✦</span>
+        <div class="hud-brand-text">
+          <span class="hud-brand-title">CRB • GREAT HONOR</span>
+          <span class="hud-brand-sub">PPG × BSI • 30 OKT 2026</span>
+        </div>
+      </a>
+
+      <nav class="hud-nav" aria-label="Navigasi Bagian">
+        <a href="#hero" class="hud-link active" data-section="hero">01. Prelude</a>
+        <a href="#honor" class="hud-link" data-section="honor">02. Great Honor</a>
+        <a href="#memories" class="hud-link" data-section="memories">03. Giant Memories</a>
+        <a href="#cinema" class="hud-link" data-section="cinema">04. Cinema</a>
+        <a href="#tributes" class="hud-link" data-section="tributes">05. PPG Notes</a>
+      </nav>
+
+      <div class="hud-actions">
+        <button type="button" id="sound-toggle" class="hud-btn-icon" aria-label="Aktifkan efek suara perayaan"
+          title="Efek Suara Perayaan (On/Off)">
+          <span class="sound-icon" id="sound-icon-label">🔊</span>
+          <span class="hud-btn-text">Chime</span>
+        </button>
+        <button type="button" id="celebrate-trigger" class="hud-btn-gold">
+          <span>🎉</span>
+          <span>Salute Cinta!</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="tracked">
+    <!-- ==========================================
+         SECTION 1: HERO — FUTURISTIC SOVEREIGN GRADUATION
+         ========================================== -->
+    <section id="hero" class="section-block hero-section" data-section-index="1">
+      <div class="container hero-grid">
+        <!-- Official Partner & Institution Logos Bar -->
+        <div class="official-crest-bar reveal-item" data-reveal="up">
+          <div class="crest-label">
+            <span class="pulse-dot"></span>
+            <span>OFFICIAL GRADUATION &amp; FAREWELL TRIBUTE</span>
+          </div>
+          <div class="crest-logos">
+            <div class="logo-pill logo-pill-light" title="Bank Syariah Indonesia (BSI)">
+              <img src="./Assets/bsi-logo.svg" alt="Logo Bank Syariah Indonesia" class="brand-logo bsi-logo-img" />
+            </div>
+            <span class="logo-divider" aria-hidden="true">×</span>
+            <div class="logo-pill logo-pill-light" title="Kementerian Ketenagakerjaan Republik Indonesia">
+              <img src="./Assets/kemnaker-logo.png" alt="Logo Kementerian Ketenagakerjaan RI"
+                class="brand-logo kemnaker-logo-img" />
+            </div>
+            <span class="logo-divider" aria-hidden="true">×</span>
+            <div class="logo-pill logo-pill-light" title="Maganghub oleh Kemnaker">
+              <img src="./Assets/maganghub-logo.png" alt="Logo Maganghub oleh Kemnaker"
+                class="brand-logo maganghub-logo-img" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Hero Centerpiece -->
+        <div class="hero-main-content">
+          <div class="hero-copy reveal-item" data-reveal="left">
+            <div class="honor-eyebrow">
+              <span class="eyebrow-badge">★ SUPREME INTERNSHIP DISTINCTION ★</span>
+              <span class="eyebrow-date">JUMAT, 30 OKTOBER 2026</span>
+            </div>
+
+            <h1 class="hero-title">
+              <span class="title-overline">Happy Graduation &amp; Farewell</span>
+              <span class="title-name-gradient">Cinta Ratu Bunga</span>
+              <span class="title-name-serif">Permatahati</span>
+            </h1>
+
+            <p class="hero-lead">
+              Sebuah persembahan kehormatan tertinggi (<strong class="text-gold">Order of Great Honor</strong>) atas
+              dedikasi luar biasa, keceriaan tulus, ide brilian, dan energi positif yang tak pernah padam bersama
+              keluarga besar
+              <span class="highlight-pill">Policy Procedure Group (PPG)</span> — <strong>Bank Syariah Indonesia</strong>
+              melalui program <strong>Maganghub Kemnaker RI</strong>.
+            </p>
+
+            <!-- Animated Ticker / Tag Pills -->
+            <div class="hero-badges-row">
+              <div class="cyber-chip">
+                <span class="chip-icon">👑</span>
+                <span>Once an Intern, Always a Part of PPG</span>
+              </div>
+              <div class="cyber-chip">
+                <span class="chip-icon">🏛️</span>
+                <span>Policy Procedure Group (PPG)</span>
+              </div>
+              <div class="cyber-chip">
+                <span class="chip-icon">✨</span>
+                <span>Maganghub Kemnaker Graduate</span>
+              </div>
+            </div>
+
+            <div class="hero-cta-group">
+              <a href="#memories" class="btn-primary-futuristic">
+                <span>Jelajahi Giant Memories</span>
+                <span class="btn-arrow">↓</span>
+              </a>
+              <a href="#cinema" class="btn-secondary-glass">
+                <span class="play-pulse">▶</span>
+                <span>Putar Video Perpisahan</span>
+              </a>
+              <button type="button" id="hero-bouquet-btn" class="btn-outline-gold">
+                <span>💐</span>
+                <span>Beri Bunga (<span id="bouquet-counter">30</span>)</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Hero 3D Interactive Portal Card -->
+          <div class="hero-visual-stage reveal-item" data-reveal="right">
+            <div class="holo-frame-wrapper tilt-card" data-tilt-max="10">
+              <div class="holo-orbit-ring ring-outer" aria-hidden="true"></div>
+              <div class="holo-orbit-ring ring-inner" aria-hidden="true"></div>
+
+              <div class="hero-portrait-card">
+                <div class="card-glare" aria-hidden="true"></div>
+                <div class="portrait-top-bar">
+                  <span class="status-chip"><span class="live-dot"></span> GRADUATED WITH GREAT HONOR</span>
+                  <span class="serial-code">PPG-BSI // 30.10.2026</span>
+                </div>
+
+                <div class="hero-image-frame">
+                  <img src="./Assets/asset3.jpeg"
+                    alt="Cinta Ratu Bunga Permatahati memegang buket bunga dan sertifikat penghargaan di depan gedung Bank Syariah Indonesia"
+                    fetchpriority="high" class="hero-main-photo" />
+                  <div class="photo-gradient-veil"></div>
+                  <div class="floating-medal-badge">
+                    <div class="medal-star">★</div>
+                    <div class="medal-text">
+                      <strong>GREAT HONOR</strong>
+                      <span>PPG DISTINCTION</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portrait-footer">
+                  <div class="portrait-quote">
+                    “Langkah kecil hari ini, adalah bagian dari langkah besar untuk masa depan.”
+                  </div>
+                  <button type="button" class="inspect-photo-btn" data-open-lightbox="2"
+                    aria-label="Perbesar foto utama Cinta Ratu Bunga Permatahati">
+                    <span>🔍 Layar Penuh</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Infinite Kinetic Ribbon Banner -->
+        <div class="kinetic-marquee-wrap" aria-hidden="true">
+          <div class="kinetic-marquee">
+            <span>✦ HAPPY GRADUATION CINTA RATU BUNGA PERMATAHATI</span>
+            <span>✦ POLICY PROCEDURE GROUP (PPG)</span>
+            <span>✦ BANK SYARIAH INDONESIA</span>
+            <span>✦ MAGANGHUB KEMNAKER RI</span>
+            <span>✦ JUMAT, 30 OKTOBER 2026</span>
+            <span>✦ GREAT HONOR INTERNSHIP AWARD</span>
+            <span>✦ LEARN • GROW • MAKE AN IMPACT</span>
+            <span>✦ STRATEGY • COMPLIANCE • PROCESS • IMPACT</span>
+            <!-- Duplicate for seamless loop -->
+            <span>✦ HAPPY GRADUATION CINTA RATU BUNGA PERMATAHATI</span>
+            <span>✦ POLICY PROCEDURE GROUP (PPG)</span>
+            <span>✦ BANK SYARIAH INDONESIA</span>
+            <span>✦ MAGANGHUB KEMNAKER RI</span>
+            <span>✦ JUMAT, 30 OKTOBER 2026</span>
+            <span>✦ GREAT HONOR INTERNSHIP AWARD</span>
+            <span>✦ LEARN • GROW • MAKE AN IMPACT</span>
+            <span>✦ STRATEGY • COMPLIANCE • PROCESS • IMPACT</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 2: THE GREAT HONOR DECREE & HOLOGRAPHIC CHARTER
+         ========================================== -->
+    <section id="honor" class="section-block honor-section" data-section-index="2">
+      <div class="container">
+        <div class="section-header reveal-item" data-reveal="up">
+          <div class="section-tag">
+            <span class="tag-star">★</span>
+            <span>SECTION 02 // THE SOVEREIGN CITATION</span>
+          </div>
+          <h2 class="section-title">
+            Anugerah <span class="text-gradient-gold">Great Honor</span> &amp; Dedikasi Tertinggi
+          </h2>
+          <p class="section-subtitle">
+            Bukan sekadar menyelesaikan masa magang—Cinta Ratu Bunga Permatahati telah mengukir standar baru keceriaan,
+            ketulusan, dan kontribusi nyata di lingkungan <strong>Policy Procedure Group (PPG)</strong>.
+          </p>
+        </div>
+
+        <!-- Interactive 3D Certificate & Trophy Showcase -->
+        <div class="honor-showcase-grid">
+          <!-- Left: Holographic Certificate of Appreciation -->
+          <div class="certificate-vault tilt-card reveal-item" data-reveal="left" data-tilt-max="8">
+            <div class="card-glare" aria-hidden="true"></div>
+            <div class="cert-border-gold">
+              <div class="cert-corner tl"></div>
+              <div class="cert-corner tr"></div>
+              <div class="cert-corner bl"></div>
+              <div class="cert-corner br"></div>
+
+              <div class="cert-header-logos">
+                <div class="cert-logo-badge">
+                  <img src="./Assets/bsi-logo.svg" alt="BSI" />
+                </div>
+                <div class="cert-crown-emblem">👑</div>
+                <div class="cert-logo-badge">
+                  <img src="./Assets/maganghub-logo.png" alt="Maganghub" />
+                </div>
+              </div>
+
+              <p class="cert-type">OFFICIAL DECREE OF APPRECIATION &amp; GREAT HONOR</p>
+              <p class="cert-presented">Proudly Presented To</p>
+              <h3 class="cert-recipient">Cinta Ratu Bunga Permatahati</h3>
+
+              <div class="cert-divider-ornament">
+                <span></span>
+                <i>✦</i>
+                <span></span>
+              </div>
+
+              <p class="cert-body">
+                In Recognition of Your <strong>Outstanding Contribution, Unwavering Dedication, Cheerful Spirit, and
+                  Positive Impact</strong> During Your Maganghub Kemnaker Internship at
+                <span class="text-teal-bright">Policy Procedure Group (PPG) — Bank Syariah Indonesia</span>.
+              </p>
+
+              <div class="cert-pillars-mini">
+                <span>STRATEGY</span>
+                <span>•</span>
+                <span>COMPLIANCE</span>
+                <span>•</span>
+                <span>PROCESS</span>
+                <span>•</span>
+                <span>IMPACT</span>
+              </div>
+
+              <div class="cert-footer">
+                <div class="cert-date-block">
+                  <span class="cert-meta-label">DATE OF GRADUATION</span>
+                  <strong class="cert-meta-val">Jumat, 30 Oktober 2026</strong>
+                </div>
+
+                <!-- Interactive Stamp Seal -->
+                <div class="cert-seal-wrapper">
+                  <button type="button" id="stamp-honor-btn" class="seal-stamp-btn"
+                    title="Klik untuk menyematkan Segel Kehormatan PPG">
+                    <span class="seal-ring"></span>
+                    <span class="seal-inner">
+                      <span class="seal-star">★</span>
+                      <span class="seal-text" id="seal-status-text">VERIFIED<br />GREAT HONOR</span>
+                    </span>
+                  </button>
+                </div>
+
+                <div class="cert-sign-block">
+                  <span class="cert-meta-label">CONFERRED BY</span>
+                  <strong class="cert-meta-val">PPG Family — BSI</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: The 4 Pillars of PPG Impact & Stats -->
+          <div class="honor-pillars-column reveal-item" data-reveal="right">
+            <div class="trophy-callout-card">
+              <div class="trophy-icon-3d" aria-hidden="true">🏆</div>
+              <div class="trophy-callout-text">
+                <span class="trophy-tag">GOLD STAR TROPHY CITATION</span>
+                <h4>“Kamu sudah menunjukkan bahwa kerja keras, ketulusan, dan semangat belajar tidak pernah mengkhianati
+                  hasil.”</h4>
+                <p>Terima kasih atas semangat, ide, dan energinya yang selalu menghidupkan suasana di Policy Procedure
+                  Group (PPG).</p>
+              </div>
+            </div>
+
+            <div class="pillars-grid">
+              <article class="pillar-card">
+                <div class="pillar-top">
+                  <span class="pillar-num">01 // LEARN &amp; STRATEGY</span>
+                  <span class="pillar-badge">100%</span>
+                </div>
+                <h4>Pembelajar Cepat &amp; Adaptif</h4>
+                <p>Menyerap setiap proses kebijakan dan prosedur di PPG dengan antusiasme tinggi dan ketelitian luar
+                  biasa.</p>
+              </article>
+
+              <article class="pillar-card">
+                <div class="pillar-top">
+                  <span class="pillar-num">02 // GROW &amp; COMPLIANCE</span>
+                  <span class="pillar-badge">A+</span>
+                </div>
+                <h4>Dedikasi &amp; Integritas Syariah</h4>
+                <p>Menjaga standar kualitas dan kolaborasi tim dengan penuh tanggung jawab serta kehangatan hati.</p>
+              </article>
+
+              <article class="pillar-card">
+                <div class="pillar-top">
+                  <span class="pillar-num">03 // PROCESS &amp; ENERGY</span>
+                  <span class="pillar-badge">∞</span>
+                </div>
+                <h4>Sinar Keceriaan PPG</h4>
+                <p>Memberi warna dan energi positif di setiap diskusi, rapat, hingga momen kebersamaan tim sehari-hari.
+                </p>
+              </article>
+
+              <article class="pillar-card">
+                <div class="pillar-top">
+                  <span class="pillar-num">04 // MAKE AN IMPACT</span>
+                  <span class="pillar-badge">★ #1</span>
+                </div>
+                <h4>Warisan Cerita Baik</h4>
+                <p>Bukan sekadar magang—Cinta telah menjadi bagian tak terpisahkan dari keluarga besar PPG Bank Syariah
+                  Indonesia.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 3: MONUMENTAL MEMORIES GALLERY (GIANT PHOTO CARDS)
+         ========================================== -->
+    <section id="memories" class="section-block memories-section" data-section-index="3">
+      <div class="container">
+        <div class="section-header reveal-item" data-reveal="up">
+          <div class="section-tag">
+            <span class="tag-star">📸</span>
+            <span>SECTION 03 // MONUMENTAL MEMORY ARCHIVES</span>
+          </div>
+          <h2 class="section-title">
+            Galeri Kenangan <span class="text-gradient-teal">Edisi Spesial</span> berukuran Monumental
+          </h2>
+          <p class="section-subtitle">
+            Setiap bingkai foto menyimpan ribuan cerita manis, tawa hangat, dan doa terbaik dari rekan-rekan
+            <strong>Policy Procedure Group (PPG)</strong>. Klik pada kartu foto untuk membuka <strong>Mode Resolusi
+              Penuh (Zoom &amp; Inspect)</strong>.
+          </p>
+
+          <!-- View Mode Switcher for Giant Cards -->
+          <div class="gallery-controls" role="group" aria-label="Pengaturan tampilan ukuran kartu foto">
+            <button type="button" class="view-mode-btn active" data-gallery-mode="monumental">
+              <span>🖼️ Giant Editorial Cards</span>
+            </button>
+            <button type="button" class="view-mode-btn" data-gallery-mode="fullframe">
+              <span>📐 Uncropped Full-Ratio View</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- GIANT PHOTO CARDS SHOWCASE -->
+        <div class="monumental-gallery" id="monumental-gallery-grid" data-mode="monumental">
+
+          <!-- GIANT CARD 1: asset1.jpeg (Full Width Monumental Hero Banner Card) -->
+          <article class="giant-memory-card card-span-full reveal-item" data-reveal="up" data-photo-index="0">
+            <div class="giant-card-inner tilt-card" data-tilt-max="4">
+              <div class="card-glare" aria-hidden="true"></div>
+              <div class="giant-media-wrap ratio-landscape">
+                <img src="./Assets/asset1.jpeg"
+                  alt="Perpisahan Magang Cinta Ratu Bunga Permatahati bersama tim Policy Procedure Group (PPG) dengan trofi Great Honor dan sertifikat BSI"
+                  loading="lazy" class="giant-photo" />
+                <div class="giant-badge-floating top-left">
+                  <span class="badge-num">ARCHIVE 01 / 06</span>
+                  <span class="badge-title">👑 THE GREAT HONOR DESK</span>
+                </div>
+                <button type="button" class="giant-zoom-trigger" data-open-lightbox="0"
+                  aria-label="Buka foto Archive 01 ukuran penuh">
+                  <span>🔍 Perbesar Foto Penuh</span>
+                </button>
+              </div>
+
+              <div class="giant-card-caption">
+                <div class="caption-meta">
+                  <span class="caption-chapter">CHAPTER I • POLICY PROCEDURE GROUP HQ</span>
+                  <span class="caption-date">Jumat, 30 Oktober 2026</span>
+                </div>
+                <h3 class="caption-headline">“Once an Intern, Always a Part of PPG” — Puncak Apresiasi &amp; Trofi Great
+                  Honor</h3>
+                <p class="caption-story">
+                  Momen penuh kebahagiaan di meja kerja Policy Procedure Group bersama rekan-rekan tercinta. Di tengah
+                  hangatnya senyuman, hadir <strong>Trofi Bintang Emas “GREAT HONOR”</strong>, <strong>Certificate of
+                    Appreciation BSI</strong>, dan buket mawar merah muda sebagai simbol terima kasih atas semangat,
+                  ide, dan ketulusan Cinta.
+                </p>
+                <div class="caption-quotes-strip">
+                  <span class="quote-pill">“Kamu bukan hanya magang, kamu juga memberi banyak arti untuk kami
+                    semua.”</span>
+                  <span class="quote-pill">“Semoga langkahmu selalu dipenuhi bunga, sukses, dan hal-hal indah
+                    lainnya!”</span>
+                  <span class="quote-pill">“Tetap jadi versi terbaikmu ♥”</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- GIANT CARD 4: asset4.jpeg -->
+          <article class="giant-memory-card card-span-half reveal-item" data-reveal="left" data-photo-index="3">
+            <div class="giant-card-inner tilt-card" data-tilt-max="5">
+              <div class="card-glare" aria-hidden="true"></div>
+              <div class="giant-media-wrap ratio-portrait">
+                <img src="./Assets/asset4.jpeg"
+                  alt="Edisi Spesial Marvel Avengers Graduation Cinta Ratu Bunga Permatahati bersama Tony Stark dan Bucky Barnes"
+                  loading="lazy" class="giant-photo" />
+                <div class="giant-badge-floating top-left">
+                  <span class="badge-num">ARCHIVE 04 / 06</span>
+                  <span class="badge-title">⚡ MARVELOUS HERO EDITION</span>
+                </div>
+                <button type="button" class="giant-zoom-trigger" data-open-lightbox="3"
+                  aria-label="Buka foto Archive 04 ukuran penuh">
+                  <span>🔍 Perbesar Foto Penuh</span>
+                </button>
+              </div>
+
+              <div class="giant-card-caption">
+                <div class="caption-meta">
+                  <span class="caption-chapter">CHAPTER IV • STILL MARVELOUS</span>
+                  <span class="caption-date">Special Tribute</span>
+                </div>
+                <h3 class="caption-headline">“Real Heroes Also Start as Interns” — Not the End, Just a New Mission!</h3>
+                <p class="caption-story">
+                  Bahkan para Avengers pun turut bangga! Dikelilingi 4 pilar utama (<em>Strategy, Compliance, Process,
+                    Impact</em>) dan kue perayaan misi baru, karena pahlawan sejati memberikan dampak besar bagi
+                  sekitarnya.
+                </p>
+                <div class="caption-quotes-strip">
+                  <span class="quote-pill">“A little intern today, a big impact tomorrow.” — Tony Stark</span>
+                  <span class="quote-pill">“Proud of you.” — Bucky</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- GIANT CARD 3: asset3.jpeg -->
+          <article class="giant-memory-card card-span-half reveal-item" data-reveal="right" data-photo-index="2">
+            <div class="giant-card-inner tilt-card" data-tilt-max="5">
+              <div class="card-glare" aria-hidden="true"></div>
+              <div class="giant-media-wrap ratio-portrait">
+                <img src="./Assets/asset3.jpeg"
+                  alt="Potret Cinta Ratu Bunga Permatahati dengan selempang Internship Farewell di depan gedung BSI"
+                  loading="lazy" class="giant-photo" />
+                <div class="giant-badge-floating top-left">
+                  <span class="badge-num">ARCHIVE 03 / 06</span>
+                  <span class="badge-title">🏛️ SOVEREIGN GRADUATE</span>
+                </div>
+                <button type="button" class="giant-zoom-trigger" data-open-lightbox="2"
+                  aria-label="Buka foto Archive 03 ukuran penuh">
+                  <span>🔍 Perbesar Foto Penuh</span>
+                </button>
+              </div>
+
+              <div class="giant-card-caption">
+                <div class="caption-meta">
+                  <span class="caption-chapter">CHAPTER III • BIGGER DREAMS AHEAD</span>
+                  <span class="caption-date">30 Oktober 2026</span>
+                </div>
+                <h3 class="caption-headline">Learn, Grow, Make an Impact — Melangkah Menuju Versi Terbaik</h3>
+                <p class="caption-story">
+                  Mengenakan selempang <em>Internship Farewell</em> di hadapan menara megah Bank Syariah Indonesia.
+                  Membawa pulang ilmu, pengalaman, dan kebaikan sebagai bekal menuju masa depan yang gemilang.
+                </p>
+                <div class="caption-quotes-strip">
+                  <span class="quote-pill">“Same Team, Different Journey ♥”</span>
+                  <span class="quote-pill">“Bigger Dreams Ahead”</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- GIANT CARD 2: asset2.jpeg -->
+          <article class="giant-memory-card card-span-half reveal-item" data-reveal="left" data-photo-index="1">
+            <div class="giant-card-inner tilt-card" data-tilt-max="5">
+              <div class="card-glare" aria-hidden="true"></div>
+              <div class="giant-media-wrap ratio-square-tall">
+                <img src="./Assets/asset2.jpeg"
+                  alt="Kebersamaan tim PPG BSI memegang plakat Thank You for Your Dedication dan buket bunga matahari"
+                  loading="lazy" class="giant-photo" />
+                <div class="giant-badge-floating top-left">
+                  <span class="badge-num">ARCHIVE 02 / 06</span>
+                  <span class="badge-title">🌻 SUNSHINE OF PPG</span>
+                </div>
+                <button type="button" class="giant-zoom-trigger" data-open-lightbox="1"
+                  aria-label="Buka foto Archive 02 ukuran penuh">
+                  <span>🔍 Perbesar Foto Penuh</span>
+                </button>
+              </div>
+
+              <div class="giant-card-caption">
+                <div class="caption-meta">
+                  <span class="caption-chapter">CHAPTER II • SOLIDARITAS &amp; WARNA BARU</span>
+                  <span class="caption-date">Maganghub × BSI</span>
+                </div>
+                <h3 class="caption-headline">“Terima Kasih untuk Segala Proses, Ilmu, dan Cerita Berharga!”</h3>
+                <p class="caption-story">
+                  Bersama plakat kehormatan <em>“Thank You for Your Dedication — BSI”</em> dan buket bunga matahari yang
+                  cerah, tim PPG merayakan setiap warna dan keceriaan yang Cinta hadirkan.
+                </p>
+                <div class="caption-quotes-strip">
+                  <span class="quote-pill">“Good Luck and Keep Shining!”</span>
+                  <span class="quote-pill">“Jaga iman, langkah, dan mimpi ya!”</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+
+
+
+          <!-- GIANT CARD 5: asset5.jpeg -->
+          <article class="giant-memory-card card-span-half reveal-item" data-reveal="right" data-photo-index="4">
+            <div class="giant-card-inner tilt-card" data-tilt-max="5">
+              <div class="card-glare" aria-hidden="true"></div>
+              <div class="giant-media-wrap ratio-portrait">
+                <img src="./Assets/asset7.jpeg"
+                  alt="Photobooth Breaking News The Daily Paper Photoplace x Kopikina bersama rekan-rekan PPG"
+                  loading="lazy" class="giant-photo" />
+                <div class="giant-badge-floating top-left">
+                  <span class="badge-num">ARCHIVE 05 / 06</span>
+                  <span class="badge-title">🗞️ BREAKING NEWS SQUAD</span>
+                </div>
+                <button type="button" class="giant-zoom-trigger" data-open-lightbox="4"
+                  aria-label="Buka foto Archive 05 ukuran penuh">
+                  <span>🔍 Perbesar Foto Penuh</span>
+                </button>
+              </div>
+
+              <div class="giant-card-caption">
+                <div class="caption-meta">
+                  <span class="caption-chapter">CHAPTER V • THE DAILY PAPER HEADLINE</span>
+                  <span class="caption-date">Photoplace × Kopikina</span>
+                </div>
+                <h3 class="caption-headline">Breaking News: Kebersamaan Seru &amp; Tawa Lepas Squad PPG!</h3>
+                <p class="caption-story">
+                  Empat pose ikonik penuh keceriaan yang mengabadikan eratnya persahabatan di luar meja kerja. Bukti
+                  nyata bahwa di PPG, kita bukan sekadar rekan kerja, melainkan keluarga!
+                </p>
+                <div class="caption-quotes-strip">
+                  <span class="quote-pill">“Headline Hari Ini: Lulus dengan Sejuta Kenangan Indah!”</span>
+                  <span class="quote-pill">“Squad PPG Terbaik ✨”</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- GIANT CARD 6: asset6.jpeg (Additional Photo Card + Smart Auto-Resolver) -->
+          <article class="giant-memory-card card-span-full reveal-item" data-reveal="up" data-photo-index="5"
+            id="giant-card-6">
+            <div class="giant-card-inner tilt-card" data-tilt-max="4">
+              <div class="card-glare" aria-hidden="true"></div>
+              <div class="giant-media-wrap ratio-landscape">
+                <img id="asset6-img" src="./Assets/asset6.jpeg" data-fallback-src="./Assets/asset5.jpeg"
+                  alt="Kenangan Spesial Tambahan Cinta Ratu Bunga Permatahati bersama Keluarga Besar Policy Procedure Group (PPG) BSI"
+                  loading="lazy" class="giant-photo" />
+                <div class="giant-badge-floating top-left">
+                  <span class="badge-num" id="archive-6-badge-num">ARCHIVE 06 / 06</span>
+                  <span class="badge-title">✨ SPECIAL ENCORE MEMORY</span>
+                </div>
+                <div class="giant-card-actions-floating">
+                  <label for="custom-photo-upload" class="giant-upload-trigger"
+                    title="Pilih file foto jika nama file berbeda dari asset6.jpeg">
+                    <span>📂 Pilih / Ganti Foto</span>
+                    <input type="file" id="custom-photo-upload" accept="image/*" hidden />
+                  </label>
+                  <button type="button" class="giant-zoom-trigger" data-open-lightbox="5"
+                    aria-label="Buka foto Archive 06 ukuran penuh">
+                    <span>🔍 Perbesar Foto Penuh</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="giant-card-caption">
+                <div class="caption-meta">
+                  <span class="caption-chapter">CHAPTER VI • ENCORE OF TOGETHERNESS &amp; LEGACY</span>
+                  <span class="caption-date">Jumat, 30 Oktober 2026</span>
+                </div>
+                <h3 class="caption-headline">Momen Spesial yang Tak Terlupakan Bersama Keluarga Besar PPG</h3>
+                <p class="caption-story">
+                  Satu lagi bingkai kenangan berharga yang melengkapi perjalanan <strong>Cinta Ratu Bunga
+                    Permatahati</strong> sebagai bagian dari <strong>Policy Procedure Group (PPG) — Bank Syariah
+                    Indonesia</strong>. Setiap senyuman dan kebersamaan ini akan selalu terkenang manis!
+                </p>
+                <div class="caption-quotes-strip">
+                  <span class="quote-pill">“Terima kasih telah menjadi bagian dari cerita indah PPG ♥”</span>
+                  <span class="quote-pill">“Sukses selalu untuk petualangan barumu, Cinta!”</span>
+                  <span class="quote-pill">“Once an Intern, Forever PPG Family ✨”</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 4: THE FAREWELL CINEMA — PLAY VIDEO SECTION
+         ========================================== -->
+    <section id="cinema" class="section-block cinema-section" data-section-index="4">
+      <div class="container">
+        <div class="section-header reveal-item" data-reveal="up">
+          <div class="section-tag">
+            <span class="tag-star">🎬</span>
+            <span>SECTION 04 // THE PPG PREMIERE SCREENING ROOM</span>
+          </div>
+          <h2 class="section-title">
+            Layar Kenangan: <span class="text-gradient-gold">Special Farewell Video</span>
+          </h2>
+          <p class="section-subtitle">
+            Putar video tribut istimewa perjalanan <strong>Cinta Ratu Bunga Permatahati</strong> bersama <strong>Policy
+              Procedure Group (PPG) — Bank Syariah Indonesia</strong>. Nyalakan suara dan berikan reaksi terbaikmu!
+          </p>
+        </div>
+
+        <!-- Futuristic Cinema Stage -->
+        <div class="cinema-stage-wrapper reveal-item" data-reveal="up" id="cinema-stage">
+          <!-- Ambient Backlight Glow -->
+          <div class="cinema-ambilight" id="cinema-ambilight" aria-hidden="true"></div>
+
+          <div class="cinema-frame">
+            <!-- Top Cinema HUD Bar -->
+            <div class="cinema-hud-top">
+              <div class="cinema-hud-left">
+                <span class="rec-indicator" id="video-status-dot"></span>
+                <span class="cinema-hud-label" id="video-status-text">READY TO PLAY // MASTER ARCHIVE</span>
+              </div>
+              <div class="cinema-hud-center">
+                <span>CINTA RATU BUNGA PERMATAHATI • PPG FAREWELL TRIBUTE</span>
+              </div>
+              <div class="cinema-hud-right">
+                <span class="timecode-display" id="video-timecode">00:00 / 00:00</span>
+              </div>
+            </div>
+
+            <!-- Video Viewport -->
+            <div class="video-viewport" id="video-viewport">
+              <video id="farewell-video" class="cinema-video-element" src="./Assets/gemini_generated_video_af7279c1.mp4"
+                poster="./Assets/asset1.jpeg" playsinline preload="metadata" controls>
+                Browser Anda tidak mendukung pemutaran video HTML5.
+              </video>
+
+              <!-- Custom Big Play Overlay Button (hides when playing) -->
+              <button type="button" id="big-play-overlay" class="big-play-overlay"
+                aria-label="Putar Video Perpisahan Cinta Ratu Bunga Permatahati">
+                <span class="big-play-rings" aria-hidden="true"></span>
+                <span class="big-play-Core">
+                  <svg viewBox="0 0 24 24" width="38" height="38" fill="currentColor" aria-hidden="true">
+                    <path d="M8 5.14v14l11-7-11-7z" />
+                  </svg>
+                </span>
+                <span class="big-play-caption">PUTAR VIDEO TRIBUT KEHORMATAN</span>
+              </button>
+
+              <!-- Floating Live Emoji Reactions Container over Video -->
+              <div id="video-reactions-layer" class="video-reactions-layer" aria-hidden="true"></div>
+            </div>
+
+            <!-- Custom Interactive Cinema Control Deck -->
+            <div class="cinema-control-deck">
+              <div class="deck-left">
+                <button type="button" id="custom-play-btn" class="deck-btn deck-btn-primary">
+                  <span id="custom-play-icon">▶</span>
+                  <span id="custom-play-label">Play Video</span>
+                </button>
+                <button type="button" id="custom-replay-btn" class="deck-btn" title="Ulangi dari awal">
+                  <span>↺ Replay</span>
+                </button>
+                <button type="button" id="custom-mute-btn" class="deck-btn" title="Suara On/Off">
+                  <span id="custom-mute-icon">🔊 Sound On</span>
+                </button>
+              </div>
+
+              <!-- Live Reaction Emojis Bar -->
+              <div class="deck-reactions" aria-label="Kirim reaksi langsung ke layar video">
+                <span class="reaction-prompt">Live Tribute:</span>
+                <button type="button" class="react-emoji-btn" data-emoji="💖" title="Kirim Cinta">💖</button>
+                <button type="button" class="react-emoji-btn" data-emoji="🌟" title="Kirim Bintang Emas">🌟</button>
+                <button type="button" class="react-emoji-btn" data-emoji="🎓" title="Selamat Wisuda Magang">🎓</button>
+                <button type="button" class="react-emoji-btn" data-emoji="👏" title="Tepuk Tangan Meriah">👏</button>
+                <button type="button" class="react-emoji-btn" data-emoji="🚀" title="Sukses Selalu">🚀</button>
+              </div>
+
+              <div class="deck-right">
+                <button type="button" id="theater-mode-btn" class="deck-btn" title="Mode Bioskop Gelap">
+                  <span>✨ Cinema Glow</span>
+                </button>
+                <button type="button" id="fullscreen-video-btn" class="deck-btn" title="Layar Penuh">
+                  <span>⛶ Fullscreen</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 5: PPG SWEET NOTES & INTERACTIVE WISH WALL
+         ========================================== -->
+    <section id="tributes" class="section-block tributes-section" data-section-index="5">
+      <div class="container">
+        <div class="section-header reveal-item" data-reveal="up">
+          <div class="section-tag">
+            <span class="tag-star">💌</span>
+            <span>SECTION 05 // MESSAGES FROM PPG FAMILY</span>
+          </div>
+          <h2 class="section-title">
+            Untaian Doa &amp; <span class="text-gradient-teal">Pesan Hati</span> Keluarga Besar PPG
+          </h2>
+          <p class="section-subtitle">
+            Setiap catatan kecil yang tertulis untuk <strong>Cinta Ratu Bunga Permatahati</strong> adalah doa tulus yang
+            mengiringi langkah barumu selepas <strong>Jumat, 30 Oktober 2026</strong>.
+          </p>
+        </div>
+
+        <!-- Tribute Cards Grid -->
+        <div class="tribute-notes-grid" id="tribute-wall">
+          <article class="tribute-note-card note-gold reveal-item" data-reveal="up">
+            <div class="note-pin" aria-hidden="true">📌</div>
+            <p class="note-quote">
+              “Terima kasih sudah menjadi bagian dari Policy Procedure Group (PPG). Semoga ilmu, pengalaman, dan
+              kebaikan yang kamu dapatkan di sini, selalu menjadi bekal untuk langkah selanjutnya.”
+            </p>
+            <div class="note-footer">
+              <strong>— PPG Team 💙</strong>
+              <span>Bank Syariah Indonesia</span>
+            </div>
+          </article>
+
+          <article class="tribute-note-card note-teal reveal-item" data-reveal="up">
+            <div class="note-pin" aria-hidden="true">👑</div>
+            <p class="note-quote">
+              “Kamu bukan sekadar magang, kamu sudah memberi warna di setiap proses kami. Kamu sudah menunjukkan bahwa
+              kerja keras, ketulusan, dan semangat belajar tidak pernah mengkhianati hasil.”
+            </p>
+            <div class="note-footer">
+              <strong>— Keluarga Besar PPG</strong>
+              <span>Great Honor Citation</span>
+            </div>
+          </article>
+
+          <article class="tribute-note-card note-rose reveal-item" data-reveal="up">
+            <div class="note-pin" aria-hidden="true">🌸</div>
+            <p class="note-quote">
+              “Semoga langkahmu selalu dipenuhi bunga, sukses, dan hal-hal indah lainnya! Semangat, sukses, jangan lupa
+              diri sendiri, dan tetap jadi versi terbaikmu!”
+            </p>
+            <div class="note-footer">
+              <strong>— Sahabat &amp; Rekan PPG</strong>
+              <span>Once an Intern, Always PPG</span>
+            </div>
+          </article>
+
+          <article class="tribute-note-card note-marvel reveal-item" data-reveal="up">
+            <div class="note-pin" aria-hidden="true">⚡</div>
+            <p class="note-quote">
+              “Not just an end, but a new chapter. Keep being you, Ratu. Good work gets noticed. Great people like you…
+              change things. Same Team, Different Chapter, Still Marvelous!”
+            </p>
+            <div class="note-footer">
+              <strong>— PPG Special Mission</strong>
+              <span>Jumat, 30 Oktober 2026</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Interactive Add Personal Tribute Box -->
+        <div class="interactive-wish-composer reveal-item" data-reveal="up">
+          <div class="composer-header">
+            <div>
+              <h3>✨ Tambahkan Ucapan &amp; Doa Terbaik untuk Cinta</h3>
+              <p>Tulis pesan manis atau klik tombol cepat di bawah untuk menambahkan kartu ucapan di layar ini.</p>
+            </div>
+            <div class="quick-wish-pills">
+              <button type="button" class="quick-wish-btn"
+                data-wish="Selamat lulus Maganghub di PPG BSI, Cinta! Semoga karier ke depannya makin bersinar dan penuh berkah! 🌟">🌟
+                Sukses Karier</button>
+              <button type="button" class="quick-wish-btn"
+                data-wish="Terima kasih atas keceriaan dan energi positifnya selama di Policy Procedure Group (PPG)! Jangan lupakan kami ya! 💐">💐
+                Terima Kasih Cinta</button>
+              <button type="button" class="quick-wish-btn"
+                data-wish="Happy Graduation Ratu! Once an Intern, Always a Part of PPG Family! Keep shining! 👑">👑
+                Always PPG Family</button>
+            </div>
+          </div>
+
+          <form id="wish-form" class="wish-form">
+            <input type="text" id="wish-sender" class="wish-input sender-input" placeholder="Nama Anda / Rekan PPG..."
+              maxlength="50" required />
+            <input type="text" id="wish-message" class="wish-input message-input"
+              placeholder="Tuliskan doa & ucapan selamat untuk Cinta Ratu Bunga Permatahati..." maxlength="240"
+              required />
+            <button type="submit" class="btn-primary-futuristic wish-submit-btn">
+              <span>Kirim Ucapan ✨</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       FOOTER: OFFICIAL SIGN-OFF & SHARE PORTAL
+       ========================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-crest">
+        <div class="footer-logos">
+          <div class="logo-pill logo-pill-light">
+            <img src="./Assets/bsi-logo.svg" alt="Bank Syariah Indonesia" class="brand-logo bsi-logo-img" />
+          </div>
+          <div class="logo-pill logo-pill-light">
+            <img src="./Assets/kemnaker-logo.png" alt="Kementerian Ketenagakerjaan RI"
+              class="brand-logo kemnaker-logo-img" />
+          </div>
+          <div class="logo-pill logo-pill-light">
+            <img src="./Assets/maganghub-logo.png" alt="Maganghub oleh Kemnaker"
+              class="brand-logo maganghub-logo-img" />
+          </div>
+        </div>
+
+        <h3 class="footer-title">Cinta Ratu Bunga Permatahati</h3>
+        <p class="footer-subtitle">
+          Policy Procedure Group (PPG) • Bank Syariah Indonesia • Maganghub Kemnaker RI<br />
+          <strong>Jumat, 30 Oktober 2026 — Great Honor Internship Graduation</strong>
+        </p>
+
+        <div class="footer-actions">
+          <button type="button" id="copy-share-link" class="btn-secondary-glass">
+            <span>🔗</span>
+            <span id="copy-link-text">Salin Link Halaman Ini untuk Dibagikan</span>
+          </button>
+          <a href="#hero" class="btn-outline-gold">
+            <span>↑ Kembali ke Atas</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Crafted with Pride, Joy &amp; Great Honor for <strong>Cinta Ratu Bunga Permatahati</strong> • Policy
+          Procedure Group (PPG)</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       LIGHTBOX MODAL DIALOG (<dialog closedby="any">)
+       ========================================== -->
+  <!-- MANDATORY: Use closedby="any" to enable light-dismiss behavior -->
+  <dialog id="photo-lightbox" class="lightbox-dialog" closedby="any" aria-labelledby="lightbox-title">
+    <div class="lightbox-container">
+      <div class="lightbox-top-bar">
+        <div class="lightbox-meta">
+          <span id="lightbox-badge" class="lightbox-badge">ARCHIVE 01 / 05</span>
+          <h3 id="lightbox-title" class="lightbox-title">Memory Title</h3>
+        </div>
+        <div class="lightbox-actions">
+          <button type="button" id="lightbox-prev" class="lightbox-nav-btn" aria-label="Foto sebelumnya">← Prev</button>
+          <button type="button" id="lightbox-next" class="lightbox-nav-btn" aria-label="Foto selanjutnya">Next
+            →</button>
+          <form method="dialog">
+            <button type="submit" class="lightbox-close-btn" aria-label="Tutup pratinjau foto">✕ Tutup (Esc)</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="lightbox-stage">
+        <img id="lightbox-img" src="./Assets/asset1.jpeg" alt="Pratinjau foto ukuran penuh" class="lightbox-image" />
+      </div>
+
+      <div class="lightbox-footer">
+        <p id="lightbox-caption">Deskripsi kenangan</p>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
